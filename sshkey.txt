@@ -1,0 +1,111 @@
+(base) oba@berlioz:~$ $ cd ~/.ssh
+$: コマンドが見つかりません
+(base) oba@berlioz:~$ cd ~/.ssh
+(base) oba@berlioz:~/.ssh$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/oba/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/oba/.ssh/id_rsa
+Your public key has been saved in /home/oba/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:1Y7BruX+TGJAXvk0rO3iYditnnWBNR+teCROmUw/ZGA oba@berlioz
+The key's randomart image is:
++---[RSA 3072]----+
+|            E.o  |
+|         . B *  .|
+|        . * @ *..|
+|       o + @ B =.|
+|        S = B + .|
+|         B o . . |
+|        o O = .  |
+|         = X .   |
+|         .*.o    |
++----[SHA256]-----+
+(base) oba@berlioz:~/.ssh$ pbcopy &lt; ~/.ssh/id_rsa.pub
+[1] 2834897
+
+コマンド 'lt' が見つかりません。次の方法でインストールできます:
+
+sudo apt install looptools
+
+bash: /home/oba/.ssh/id_rsa.pub: 許可がありません
+(base) oba@berlioz:~/.ssh$ 
+コマンド 'pbcopy' が見つかりません。もしかして:
+
+  command 'bcopy' from deb bacula-sd (9.4.2-2ubuntu5)
+
+次を試してみてください: sudo apt install <deb name>
+(base) oba@berlioz:~/.ssh$ bcopy &lt; ~/.ssh/id_rsa.pub
+[1]+  終了 127              pbcopy
+[1] 2834962
+
+コマンド 'bcopy' が見つかりません。次の方法でインストールできます:
+
+sudo apt install bacula-sd
+
+
+コマンド 'lt' が見つかりません。次の方法でインストールできます:
+
+sudo apt install looptools
+
+[1]+  終了 127              bcopy
+bash: /home/oba/.ssh/id_rsa.pub: 許可がありません
+(base) oba@berlioz:~/.ssh$ 
+(base) oba@berlioz:~/.ssh$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/oba/.ssh/id_rsa): 
+/home/oba/.ssh/id_rsa already exists.
+Overwrite (y/n)? 
+(base) oba@berlioz:~/.ssh$ cat ~/.ssh/id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+h6go0unT9rvsNr9xfU0wOYW6N68=
+-----END OPENSSH PRIVATE KEY-----
+(base) oba@berlioz:~/.ssh$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDp/ffHcm4ckhraGvOQ8lDPeMjgvXS21HBSORsBv5A9VvkwWoMFw96Xdgeq63OQV+ZAUR4qZy8ElFK0AjjoE32sYwQZtGZz8lkJFG3qO6Gbt0fzMWAfEf7OjS/e7r+aa5oxVC8sot77fQewtvewMpTZXD4AZ9+g9sWQ219iWWUaaH5YT8UJZGcWVtGwj+Y91SnXOcOD87Zsd3ShNdmoqyZOtjqpyVAiQOiptqmS88zSO+tb0JNpgDW4JYEXREgXXmigpad9ZuZcDnLiP8CqoulZMl+8MaEZ3z9DYaUIrqbySSQ4RoFOZUMSbkzMTg1uBOWV/mPIcdQURhvokoyasryc9O4uMwEtrfVTAMjEsW/l9GnNTiN/Vsij0AaMv5H7xlnB4y4wotNLJi7UB5jgrxLe77TcT2AK6N5wxaWdJLYS1k5YEhjvjqDeSHRNaAZ5qA5RDFTTBqzYIAcCPnau4XRjTlvv5hsDZDqHOy7UnHkHEexExZDuoX81qeU1yyLZFuU= oba@berlioz
+(base) oba@berlioz:~/.ssh$ 
